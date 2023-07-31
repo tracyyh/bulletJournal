@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200" prefWidth="200">
+      <children>
+         <VBox prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <TextField promptText="add event title" style="-fx-background-color: antiquewhite;">
+                  <font>
+                     <Font name="Gaegu Regular" size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets left="2.0" right="2.0" top="5.0" />
+                  </VBox.margin>
+               </TextField>
+               <TextArea prefHeight="66.0" prefWidth="196.0" promptText="add event description" style="-fx-background-color: antiquewhite;">
+                  <VBox.margin>
+                     <Insets left="2.0" right="2.0" />
+                  </VBox.margin>
+                  <font>
+                     <Font name="Gaegu Regular" size="10.0" />
+                  </font>
+               </TextArea>
+               <HBox prefHeight="100.0" prefWidth="200.0" />
+            </children>
+         </VBox>
+      </children></AnchorPane>
+</Scene>

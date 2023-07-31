@@ -1,0 +1,33 @@
+{
+  "week-name" : "my bullet journal :D",
+  "arguments" : [ {
+    "weekday" : "MONDAY",
+    "duties" : [ {
+      "duty" : "EVENT",
+      "info" : {
+        "name" : "t",
+        "description" : "t",
+        "start-time" : 54000000,
+        "duration" : 40
+      }
+    } ]
+  }, {
+    "weekday" : "TUESDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "WEDNESDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "THURSDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "FRIDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "SATURDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "SUNDAY",
+    "duties" : [ ]
+  } ]
+}

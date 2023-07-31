@@ -1,0 +1,48 @@
+{
+  "week-name" : "my awefawefwabullet journal :D",
+  "arguments" : [ {
+    "weekday" : "MONDAY",
+    "duties" : [ {
+      "duty" : "TASK",
+      "info" : {
+        "name" : "t",
+        "description" : "t",
+        "completed" : false
+      }
+    } ]
+  }, {
+    "weekday" : "TUESDAY",
+    "duties" : [ {
+      "duty" : "EVENT",
+      "info" : {
+        "name" : "e",
+        "description" : "d",
+        "start-time" : 54000000,
+        "duration" : 10
+      }
+    } ]
+  }, {
+    "weekday" : "WEDNESDAY",
+    "duties" : [ {
+      "duty" : "TASK",
+      "info" : {
+        "name" : "a",
+        "description" : "w",
+        "completed" : true
+      }
+    } ]
+  }, {
+    "weekday" : "THURSDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "FRIDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "SATURDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "SUNDAY",
+    "duties" : [ ]
+  } ],
+  "notes" : "wefawefawefaw"
+}

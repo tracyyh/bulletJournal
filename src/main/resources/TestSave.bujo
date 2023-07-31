@@ -1,0 +1,33 @@
+{
+  "week-name" : "my bweafjkawefawefibawefullet journal :D",
+  "arguments" : [ {
+    "weekday" : "MONDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "TUESDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "WEDNESDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "THURSDAY",
+    "duties" : [ {
+      "duty" : "TASK",
+      "info" : {
+        "name" : "t2",
+        "description" : "dea",
+        "completed" : true
+      }
+    } ]
+  }, {
+    "weekday" : "FRIDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "SATURDAY",
+    "duties" : [ ]
+  }, {
+    "weekday" : "SUNDAY",
+    "duties" : [ ]
+  } ],
+  "notes" : "awoiefhawefhiuaweuifgawief"
+}

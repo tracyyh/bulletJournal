@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="background" prefHeight="810.0" prefWidth="1511.0" style="-fx-background-color: floralwhite;">
+        <children>
+            <MenuButton fx:id="addThings" layoutX="12.0" layoutY="59.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="83.0" style="-fx-background-color: antiquewhite;" text="+">
+                <items>
+                    <MenuItem fx:id="addEvent" mnemonicParsing="false" text="Event" />
+                    <MenuItem fx:id="addTask" mnemonicParsing="false" text="Task" />
+                </items>
+                <font>
+                    <Font name="Courier New" size="31.0" />
+                </font>
+            </MenuButton>
+            <HBox layoutX="5.0" layoutY="143.0" prefHeight="675.0" prefWidth="1306.0" AnchorPane.leftAnchor="5.0">
+                <children>
+                    <VBox fx:id="monBack" prefHeight="511.0" prefWidth="172.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                     <VBox prefHeight="568.0" prefWidth="170.0">
+                        <children>
+                                  <TextField alignment="CENTER" prefHeight="0.0" prefWidth="172.0" style="-fx-background-color: transparent;" text="monday">
+                                      <font>
+                                          <Font name="Courier New" size="26.0" />
+                                      </font>
+                                  </TextField>
+                           <ProgressBar fx:id="monProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                              <VBox.margin>
+                                 <Insets left="25.0" right="25.0" />
+                              </VBox.margin>
+                           </ProgressBar>
+                                  <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                      <font>
+                                          <Font name="Courier New" size="22.0" />
+                                      </font>
+                                  </TextField>
+                           <VBox fx:id="monTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                                  <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                      <font>
+                                          <Font name="Courier New" size="22.0" />
+                                      </font>
+                                  </TextField>
+                                  <VBox fx:id="monEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                        </children>
+                     </VBox>
+                     <ImageView fx:id="flower" fitHeight="150.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@flower.png" />
+                        </image>
+                     </ImageView>
+                        </children>
+                    </VBox>
+                    <VBox fx:id="tuesBack" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                            <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="tuesday">
+                                <font>
+                                    <Font name="Courier New" size="26.0" />
+                                </font>
+                            </TextField>
+                     <ProgressBar fx:id="tuesProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                        <VBox.margin>
+                           <Insets left="25.0" right="25.0" />
+                        </VBox.margin>
+                     </ProgressBar>
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                     <VBox fx:id="tuesTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                     <VBox fx:id="tuesEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                        </children>
+                    </VBox>
+                    <VBox fx:id="wedBack" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                            <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="wednesday">
+                                <font>
+                                    <Font name="Courier New" size="26.0" />
+                                </font>
+                            </TextField>
+                     <ProgressBar fx:id="wedProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                        <VBox.margin>
+                           <Insets left="25.0" right="25.0" />
+                        </VBox.margin>
+                     </ProgressBar>
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                            <VBox fx:id="wedTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="189.0" />
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                            <VBox fx:id="wedEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="200.0" />
+                        </children>
+                    </VBox>
+                    <VBox fx:id="thursBack" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                            <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="thursday">
+                                <font>
+                                    <Font name="Courier New" size="26.0" />
+                                </font>
+                            </TextField>
+                     <ProgressBar fx:id="thursProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                        <VBox.margin>
+                           <Insets left="25.0" right="25.0" />
+                        </VBox.margin>
+                     </ProgressBar>
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                            <VBox fx:id="thursTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="204.0" />
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                            <VBox fx:id="thursEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="1.0" prefWidth="188.0" />
+                        </children>
+                    </VBox>
+                    <VBox fx:id="friBack" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                            <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="friday">
+                                <font>
+                                    <Font name="Courier New" size="26.0" />
+                                </font>
+                            </TextField>
+                     <ProgressBar fx:id="friProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                        <VBox.margin>
+                           <Insets left="25.0" right="25.0" />
+                        </VBox.margin>
+                     </ProgressBar>
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                     <VBox fx:id="friTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                     <VBox fx:id="friEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                        </children>
+                    </VBox>
+                    <VBox fx:id="satBack" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                            <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="saturday">
+                                <font>
+                                    <Font name="Courier New" size="26.0" />
+                                </font>
+                            </TextField>
+                     <ProgressBar fx:id="satProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                        <VBox.margin>
+                           <Insets left="25.0" right="25.0" />
+                        </VBox.margin>
+                     </ProgressBar>
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                     <VBox fx:id="satTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                            <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                <font>
+                                    <Font name="Courier New" size="22.0" />
+                                </font>
+                            </TextField>
+                     <VBox fx:id="satEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                        </children>
+                    </VBox>
+                    <VBox fx:id="sunBack" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;">
+                        <HBox.margin>
+                            <Insets left="6.0" right="9.0" />
+                        </HBox.margin>
+                        <children>
+                     <VBox prefHeight="573.0" prefWidth="172.0">
+                        <children>
+                                  <TextField alignment="CENTER" style="-fx-background-color: transparent;" text="sunday">
+                                      <font>
+                                          <Font name="Courier New" size="26.0" />
+                                      </font>
+                                  </TextField>
+                           <ProgressBar fx:id="sunProgress" prefHeight="20.0" prefWidth="177.0" progress="0.0" style="-fx-accent: bfd9bf;">
+                              <VBox.margin>
+                                 <Insets left="25.0" right="25.0" />
+                              </VBox.margin>
+                           </ProgressBar>
+                                  <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="tasks:">
+                                      <font>
+                                          <Font name="Courier New" size="22.0" />
+                                      </font>
+                                  </TextField>
+                           <VBox fx:id="sunTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                                  <TextField alignment="TOP_LEFT" style="-fx-background-color: transparent;" text="events:">
+                                      <font>
+                                          <Font name="Courier New" size="22.0" />
+                                      </font>
+                                  </TextField>
+                           <VBox fx:id="sunEvents" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="188.0" />
+                        </children>
+                     </VBox>
+                     <ImageView fx:id="ducky" fitHeight="174.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" translateX="15.0">
+                        <image>
+                           <Image url="@ducky.png" />
+                        </image>
+                     </ImageView>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <VBox fx:id="taskQueue" layoutX="1316.0" layoutY="-1.0" prefHeight="400.0" prefWidth="190.0" style="-fx-background-color: antiquewhite;">
+                <children>
+               <VBox prefHeight="317.0" prefWidth="190.0">
+                  <children>
+                          <TextField alignment="CENTER" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="task queue">
+                              <font>
+                                  <Font name="Courier New" size="24.0" />
+                              </font>
+                          </TextField>
+                     <VBox fx:id="totalTasks" maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="197.0" />
+                  </children>
+               </VBox>
+               <ImageView fx:id="flower1" fitHeight="150.0" fitWidth="170.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@flower.png" />
+                  </image>
+               </ImageView>
+                </children>
+            </VBox>
+            <TextField fx:id="bujoTitle" alignment="CENTER" layoutX="156.0" layoutY="6.0" prefHeight="158.0" prefWidth="881.0" style="-fx-background-color: transparent;" text="my bullet journal :D">
+                <font>
+                    <Font name="Courier New" size="31.0" />
+                </font>
+            </TextField>
+            <Button fx:id="openFile" layoutX="12.0" layoutY="16.0" maxHeight="31.0" mnemonicParsing="false" prefHeight="31.0" style="-fx-background-color: antiquewhite;" text="open">
+            <font>
+               <Font name="Courier New" size="13.0" />
+            </font></Button>
+            <Button fx:id="saveFile" layoutX="73.0" layoutY="16.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="31.0" style="-fx-background-color: antiquewhite;" text="save">
+            <font>
+               <Font name="Courier New" size="13.0" />
+            </font></Button>
+            <Label layoutX="1110.0" layoutY="34.0" text="Don't overbook yourself!">
+                <font>
+                    <Font name="Courier New" size="14.0" />
+                </font>
+            </Label>
+         <GridPane layoutX="1111.0" layoutY="55.0" prefHeight="60.0" prefWidth="192.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="97.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="34.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Label text="Max Events">
+                  <font>
+                     <Font name="Courier New" size="14.0" />
+                  </font>
+               </Label>
+               <Label text="Max Tasks" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Courier New" size="14.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="maxEvents" GridPane.columnIndex="1">
+                  <font>
+                     <Font name="Courier New" size="14.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="maxTasks" prefHeight="26.0" prefWidth="85.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Courier New" size="14.0" />
+                  </font>
+               </TextField>
+            </children>
+         </GridPane>
+         <VBox fx:id="notesBackground" layoutX="1317.0" layoutY="410.0" prefHeight="409.0" prefWidth="189.0" style="-fx-background-color: antiquewhite;">
+            <children>
+               <TextField alignment="CENTER" prefHeight="67.0" prefWidth="176.0" style="-fx-background-color: transparent;" text="notes">
+                  <font>
+                     <Font name="Courier New" size="24.0" />
+                  </font>
+               </TextField>
+               <VBox maxHeight="300.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="65.0" />
+               <VBox maxHeight="200.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="65.0" />
+               <TextArea fx:id="notes" prefHeight="327.0" prefWidth="201.0" promptText="use this space for your notes" style="-fx-background-color: transparent;" wrapText="true">
+                  <font>
+                     <Font name="Courier New" size="13.0" />
+                  </font>
+                  <padding>
+                     <Insets left="5.0" right="5.0" />
+                  </padding>
+                  <VBox.margin>
+                     <Insets left="5.0" right="5.0" />
+                  </VBox.margin>
+               </TextArea>
+            </children>
+         </VBox>
+         <MenuButton fx:id="theme" layoutX="135.0" layoutY="15.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: antiquewhite;" text="theme">
+            <items>
+               <MenuItem fx:id="original" mnemonicParsing="false" text="original" />
+               <MenuItem fx:id="green" mnemonicParsing="false" text="green" />
+               <MenuItem fx:id="pink" mnemonicParsing="false" text="pink" />
+               <MenuItem fx:id="grayscale" mnemonicParsing="false" text="grayscale" />
+               <MenuItem fx:id="custom" mnemonicParsing="false" text="custom" />
+            </items>
+            <font>
+               <Font name="Courier New" size="14.0" />
+            </font>
+         </MenuButton>
+         <HBox fx:id="splash" alignment="CENTER" prefHeight="820.0" prefWidth="1511.0" style="-fx-background-color: floralwhite;">
+            <children>
+               <VBox fx:id="splashVbox" alignment="CENTER" prefHeight="820.0" prefWidth="1142.0">
+                  <children>
+                     <Label fx:id="splashTitle" text="Welcome to your bullet journal!" visible="false">
+                        <font>
+                           <Font name="Courier New" size="44.0" />
+                        </font>
+                     </Label>
+                     <HBox fx:id="promptUser" alignment="CENTER" prefHeight="43.0" prefWidth="824.0">
+                        <children>
+                           <Label text="Please enter your system username to access your bullet journal: ">
+                              <font>
+                                 <Font name="Courier New" size="24.0" />
+                              </font>
+                           </Label>
+                        </children>
+                        <padding>
+                           <Insets top="10.0" />
+                        </padding>
+                     </HBox>
+                     <Label fx:id="userLabel" style="-fx-background-color: white;">
+                        <graphic>
+                           <TextField fx:id="username" prefHeight="26.0" prefWidth="150.0">
+                              <font>
+                                 <Font name="Courier New" size="24.0" />
+                              </font>
+                           </TextField>
+                        </graphic>
+                     </Label>
+                     <Label fx:id="incorrectUser" text="Incorrect username. Please try again." visible="false">
+                        <font>
+                           <Font name="Courier New" size="20.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+        </children>
+    </AnchorPane>
+</Scene>
